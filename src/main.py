@@ -1,7 +1,10 @@
 import sys 
 import os
-from script.matrix_operation import check_diagonals,check_rows_and_columns
+from script.matrix_operation.matrix_operation import check_diagonals,check_rows_and_columns
 
+i = 2
+player = False
+win = False
 matrix_board = [["-","-","-"],
                 ["-","-","-"],
                 ["-","-","-"]]
@@ -27,9 +30,6 @@ def print_board(matrix):
     for i in matrix:
         print(i,"\n")
 
-i = 2
-player = False
-win = False
 while True:
     if i % 2 == 0:
         print("--------X player start X------")
